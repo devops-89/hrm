@@ -90,7 +90,12 @@ const AddDepartment = () => {
                 <TextField
                   {...params}
                   label=" Status"
-                  sx={{ ...loginWhiteTextField }}
+                  sx={{
+                    ...loginWhiteTextField,
+                    "& .MuiSvgIcon-root": {
+                      fill: COLORS.WHITE,
+                    },
+                  }}
                   id="status"
                   error={formik.touched.status && Boolean(formik.errors.status)}
                   helperText={formik.touched.status && formik.errors.status}

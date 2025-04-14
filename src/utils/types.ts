@@ -1,4 +1,6 @@
+import { StaticImageData } from "next/image";
 import { ElementType, ReactNode } from "react";
+import { USER_STATUS } from "./enum";
 
 export interface LayoutProps {
   children: ReactNode;
@@ -35,4 +37,16 @@ export interface DESIGNATIONS_DATA {
 
 export interface CHIP_COMPONENT {
   label: string;
+}
+
+export interface EMPLOYEE_DATA {
+  id: string;
+  name: string;
+  avatar: StaticImageData;
+  department: string;
+  email: string;
+  phoneNumber: string;
+  designation: string;
+  joiningDate: EpochTimeStamp;
+  status: USER_STATUS;
 }

@@ -50,7 +50,7 @@ const Sidebar = () => {
       <Box sx={{ textAlign: "center", padding: 1, mt: 1 }}>
         <Image src={logo} alt="" width={100} />
       </Box>
-      <Divider sx={{ borderWidth: 1.5 }} />
+      <Divider sx={{ borderWidth: 1.5,borderColor:COLORS.WHITE }} />
       <Box sx={{ pt: 2 }}>
         <List>
           {SidebarData.map((val, i) => (

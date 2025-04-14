@@ -8,7 +8,8 @@ const Wrapper = ({ children }: any) => {
         marginLeft: "240px",
         marginTop: "60px",
         backgroundColor: COLORS.BODYCOLOR,
-        minHeight:"100vh"
+        minHeight: "100vh",
+        color: COLORS.WHITE,
       }}
     >
       {children}
